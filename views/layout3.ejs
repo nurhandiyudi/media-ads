@@ -55,7 +55,7 @@
         <iframe frameborder="0" width="100%" height="100%" src="https://www.dailymotion.com/embed/video/k2RCNvLTp2kFCFkZD3I?autoplay=1" allowfullscreen></iframe>
       </div>
       <div id="ads-6">
-        <video id="ads2" src="https://tv-advertisement-purwanto1337.c9users.io/ads/2.mp4" width="100%" height="100%"  autoplay muted>
+        <video id="ads2" src="https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/2.mp4" width="100%" height="100%"  autoplay muted>
         </video>
       </div>
       <div class="row" style="margin-left: 0px !important;">
@@ -81,7 +81,7 @@
     var myvid1 = document.getElementById('ads1');
       var myvid1s = [<% adss.forEach(function(ads){ 
             if(ads.type == "ads1"){
-            %>"https://tv-advertisement-purwanto1337.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
+            %>"https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
       var activeVideo = 0;
       
       myvid1.addEventListener('ended', function(e) {
@@ -92,7 +92,7 @@
         myvid1.src = myvid1s[activeVideo];
         myvid1.play();
         var videoname = myvid1.src.substring(53);
-        var url = 'https://tv-advertisement-purwanto1337.c9users.io/ads/count';
+        var url = 'https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/count';
         // The data we are going to send in our request
         fetch(url, {
         method: 'POST',
@@ -106,7 +106,7 @@
     var myvid2 = document.getElementById('ads2');
       var myvid2s = [<% adss.forEach(function(ads){ 
             if(ads.type == "ads2"){
-            %>"https://tv-advertisement-purwanto1337.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
+            %>"https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
       var activeVideo = 0;
       
       myvid2.addEventListener('ended', function(e) {
@@ -117,7 +117,7 @@
         myvid2.src = myvid2s[activeVideo];
         myvid2.play();
         var videoname = myvid2.src.substring(53);
-        var url = 'https://tv-advertisement-purwanto1337.c9users.io/ads/count';
+        var url = 'https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/count';
         // The data we are going to send in our request
         fetch(url, {
         method: 'POST',
@@ -132,7 +132,7 @@
     var myvid3 = document.getElementById('ads3');
       var myvid3s = [<% adss.forEach(function(ads){ 
             if(ads.type == "ads3"){
-            %>"https://tv-advertisement-purwanto1337.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
+            %>"https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/<%= ads.imageId %>.mp4",<% } })%>];
       var activeVideo = 0;
       
       myvid3.addEventListener('ended', function(e) {
@@ -143,7 +143,7 @@
         myvid3.src = myvid3s[activeVideo];
         myvid3.play();
         var videoname = myvid3.src.substring(53);
-        var url = 'https://tv-advertisement-purwanto1337.c9users.io/ads/count';
+        var url = 'https://media-ads-nodejs-nurhandiyudi.c9users.io/ads/count';
         // The data we are going to send in our request
         fetch(url, {
         method: 'POST',
