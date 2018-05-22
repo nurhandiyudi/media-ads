@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            var socket = io(); 
+            
+            socket.on('viewdata', function(data){
+               $('#viewdata').append($('<li>').text(data));
+            });
+          });
+    </script>
+  </head>
+  <body>
+      <ul><li id="viewdata"></li></ul>
+  </body>
+</html>
